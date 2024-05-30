@@ -5,11 +5,60 @@
     <title>Title</title>
 
     <style>
+        h1 {
+            font-size: 300%;
+            font-family: "Helvetica Neue";
+        }
 
-        
+        /* ids */
+        #name {
+            position: absolute;
+            left: 35%;
+            top: 30%;
+        }
+
+        /* classes */
+        .split {
+            height: 100vh;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* placeholder background colours to work with */
+        .left {
+            left: 0;
+            background-color: #bedeff;
+        }
+
+        .right {
+            right: 0;
+            background-color: grey;
+        }
     </style>
+
 </head>
 <body>
+<!-- left -->
+<div class="split left">
+    <div id='name'>
+        <h1>
+            Sam Pich
+        </h1>
+    </div>
+</div>
+
+<!-- right -->
+<div class="split right">
+</div>
+
+
 
 </body>
 </html>
