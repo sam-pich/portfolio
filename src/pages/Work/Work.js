@@ -32,7 +32,6 @@ export default function Work() {
             <a href="mailto:sam.pich@outlook.com">Email</a>
             <a href="https://github.com/sam-pich">GitHub</a>
             <a href="https://www.linkedin.com/in/sampich/">LinkedIn</a>
-
           </div>
           <p className="section-header pt-6">EXPERIENCE</p>
         </div>
@@ -43,32 +42,32 @@ export default function Work() {
           {WORK.map((w) => (
               <p
                   onClick={() => setWork(w)}
-              className={work.name === w.name && 'selected-project'}
-            >
-              {w.name}
-            </p>
+                  className={work.name === w.name && 'selected-project'}
+              >
+                {w.name}
+              </p>
           ))}
         </div>
         <div className="projects-container">
           <div>
             <a
-              href={work.link}
-              target="_blank"
-              rel="noreferrer"
-              className="project-images"
+                href={work.link}
+                target="_blank"
+                rel="noreferrer"
+                className="project-images"
             >
               {work.images.map((img, index) => (
-                <img
-                  src={`images/${img}`}
-                  alt={`${work.name} number ${index}`}
-                  style={{ maxWidth: `${100 / work.images.length}%` }}
-                  key={`${work.name} number ${index}`}
-                />
+                  <img
+                      src={`images/${img}`}
+                      alt={`${work.name} number ${index}`}
+                      style={{ maxWidth: `${100 / work.images.length}%` }}
+                      key={`${work.name} number ${index}`}
+                  />
               ))}
             </a>
             <p
-              className="heading project-heading"
-              id={work.name.replace(' ', '_')}
+                className="heading project-heading"
+                id={work.name.replace(' ', '_')}
             >
               {work.name}
             </p>
@@ -80,33 +79,33 @@ export default function Work() {
         </div>
         <div className="mobile-project-info">
           {WORK.map((work) => (
-            <div>
-              <a
-                href={work.link}
-                target="_blank"
-                rel="noreferrer"
-                className="project-images"
-              >
-                {work.images.map((img, index) => (
-                  <img
-                    src={`images/${img}`}
-                    alt={`${work.name} number ${index}`}
-                    style={{ maxWidth: `${100 / work.images.length}%` }}
-                    key={`${work.name} number ${index}`}
-                  />
-                ))}
-              </a>
-              <p
-                className="heading project-heading"
-                id={work.name.replace(' ', '_')}
-              >
-                {work.name}
-              </p>
-              <br />
-              <div dangerouslySetInnerHTML={{ __html: work.description }}></div>
-              <br />
-              <br />
-            </div>
+              <div>
+                <a
+                    href={work.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-images"
+                >
+                  {work.images.map((img, index) => (
+                      <img
+                          src={`images/${img}`}
+                          alt={`${work.name} number ${index}`}
+                          style={{ maxWidth: `${100 / work.images.length}%` }}
+                          key={`${work.name} number ${index}`}
+                      />
+                  ))}
+                </a>
+                <p
+                    className="heading project-heading"
+                    id={work.name.replace(' ', '_')}
+                >
+                  {work.name}
+                </p>
+                <br />
+                <div dangerouslySetInnerHTML={{ __html: work.description }}></div>
+                <br />
+                <br />
+              </div>
           ))}
         </div>
       </div>
@@ -116,15 +115,15 @@ export default function Work() {
 
 function Experience({ name, dates, description, position, link }) {
   return (
-    <div className="experience-container">
-      <div className="experience-header">
-        <a href={link} target="_blank" rel="noreferrer">
-          <b>{name}</b>
-        </a>
-        <p className="experience-dates">{dates.join('-')}</p>
+      <div className="experience-container">
+        <div className="experience-header">
+          <a href={link} target="_blank" rel="noreferrer">
+            <b>{name}</b>
+          </a>
+          <p className="experience-dates">{dates.join('-')}</p>
+        </div>
+        <p className="experience-position">{position}</p>
+        <p>{description}</p>
       </div>
-      <p className="experience-position">{position}</p>
-      <p>{description}</p>
-    </div>
   );
 }
