@@ -1,6 +1,6 @@
 {
   "name": "sampich",
-  "homepage": "https://sampich.com/portfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
