@@ -9,12 +9,13 @@ export default function Header() {
     <header>
       <div className="titles">
         <h1 className="name">
-          <Link to="/">Sam Pich</Link>
+          <Link to="/">Michelle 心娅 Liu</Link>
         </h1>
       </div>
       <div className="nav-container">
         <Link to="/">Work</Link>
         <Link to="/about">About</Link>
+        <Link to="/play">Etc.</Link>
       </div>
     </header>
   );

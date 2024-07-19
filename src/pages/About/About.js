@@ -38,8 +38,6 @@ export default function About() {
                 <a href="mailto:sam.pich@outlook.com">Email</a>
                 <a href="https://github.com/sam-pich">GitHub</a>
                 <a href="https://www.linkedin.com/in/sampich/">LinkedIn</a>
-
-
               </div>
             </div>
           </div>
