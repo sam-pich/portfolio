@@ -9,7 +9,7 @@ export default function Header() {
     <header>
       <div className="titles">
         <h1 className="name">
-          <Link to="/">Michelle 心娅 Liu</Link>
+          <Link to="/">Sam Pich</Link>
         </h1>
       </div>
       <div className="nav-container">
