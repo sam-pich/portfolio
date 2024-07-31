@@ -3,11 +3,21 @@ const WORK = [
     name: 'Yatzy',
     images: ['yatzy1.png', 'yatzy2.png', 'yatzy3.png'],
     description:
-      '<p>Click on the link to go to the GitHub Repo. </br></br>A simple and intuitive yatzy game where users can roll dice with visuals and track their scores on a dynamic leaderboard based off PHP.</p>',
+      '<p>Click on the link to go to the GitHub Repo. </br></br>A simple and intuitive yatzy game where users can roll dice with visuals and track their scores on a dynamic leaderboard based off PHP.  Includes the use of postgres to store user information.</p>',
     summary:
       'Yatzy Game for CSI3140.',
     date: '07.2024',
     link: 'https://github.com/sam-pich/yatzy',
+  },
+  {
+    name: 'Tic-Tac-Toe',
+    images: ['tictactoe1.png', 'tictactoe2', 'tictactoe3.png'],
+    description:
+      '<p>Click on the link to go to the GitHub Repo. </br></br>A simple two-player tic-tac-toe game where the goal of the game is to get three in a row horizontally, vertically, or diagonally.</p>',
+    summary:
+      'TicTacToe for CSI3140.',
+    date: '07.2024',
+    link: 'https://github.com/alexyeh5270/tictactoe',
   },
 ];
 export default WORK;
